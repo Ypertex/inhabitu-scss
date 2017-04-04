@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "inhabitu";
+  src:url("inhabitu.eot");
+  src:url("inhabitu.eot?#iefix") format("embedded-opentype"),
+    url("inhabitu.woff") format("woff"),
+    url("inhabitu.ttf") format("truetype"),
+    url("inhabitu.svg#inhabitu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[class^="inhabitu-"]:before,
+[class*=" inhabitu-"]:before {
+  font-family: "inhabitu" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.inhabitu-twitter:before {
+  content: "\61";
+}
+.inhabitu-pin:before {
+  content: "\63";
+}
+.inhabitu-rss:before {
+  content: "\64";
+}
+.inhabitu-link:before {
+  content: "\65";
+}
+.inhabitu-tag:before {
+  content: "\66";
+}
+.inhabitu-facebook:before {
+  content: "\62";
+}
+.inhabitu-quill-pen:before {
+  content: "\67";
+}
+.inhabitu-info:before {
+  content: "\68";
+}
+.inhabitu-google:before {
+  content: "\69";
+}
+.inhabitu-chevron-left:before {
+  content: "\6a";
+}
+.inhabitu-chevron-right:before {
+  content: "\6b";
+}
+.inhabitu-linkedin:before {
+  content: "\6c";
+}

@@ -1,0 +1,127 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Source+Code+Pro');
+
+// Define font families
+$family-serif: 'Playfair Display', serif;
+$family-sans-serif: 'Raleway', sans-serif;
+$family-monospace: 'Source Code Pro', monospace;
+
+// Define colors
+$orange: #ff8f00;
+$blue: #0061b3;
+$purple: #5d00a1;
+$green: #12ad00;
+$red: #fd0005;
+$yellow: #fffd00;
+$primary: $orange;
+$link-hover: #bf6b00;
+$footer-link-hover: #ffab3f;
+$code: $blue;
+$pre: $blue;
+
+// Import icon and Bulma files
+@import "inhabitu-icons";
+@import "bulma/bulma";
+
+// Set font family for headers
+h1, h2, h3, h4, h5, h6 {
+	font-family: $family-serif;
+}
+
+// Set widths
+.container {
+	max-width: 708px; // 768px minus padding and margin
+	margin: auto;
+}
+
+// Set colors
+.hero-body {
+	background-color: $white-ter;
+	color: $grey;
+	.container .title {
+		color: $grey;
+	}
+}
+.footer {
+	background-color: $grey-dark;
+	color: $light;
+	a:hover {
+		color: $footer-link-hover;
+	}
+}
+
+hr {
+	border-bottom: 1px solid $grey-lighter;
+}
+
+// Limit title/logo in height
+.title.is-1 {
+	max-height: 80px;
+}
+
+// Inhabitu-specific styles
+.content blockquote {
+	font-size: $size-medium;
+	border-left: 0.25em solid $primary;
+	footer {
+		@extend .heading;
+		text-align: right;
+		cite {
+			font-style: normal;
+		}
+	}
+	footer::before {
+		content: "—";
+	}
+}
+.content abbr {
+	border-bottom: 1px dotted $text;
+}
+.content pre {
+	margin-bottom: 1em;
+}
+.inhabitu-logo {
+	margin-bottom: -20px;
+	margin-top: -20px;
+	max-width: 240px;
+}
+.inhabitu-emphasize.section {
+	@extend .hero-body;
+}
+.inhabitu-figure {
+	margin: 48px -24px !important;
+	text-align: center;
+	img {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	.inhabitu-video {
+		display: block;
+		height: 0;
+		padding-bottom: 56.25%;
+		position: relative;
+		width: 100%;
+		iframe {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+	.inhabitu-footer {
+		@extend .heading;
+		padding: 1em 24px 0 24px;
+	}
+}
+.inhabitu-related-post {
+	border-bottom: 1px solid $grey-lighter;
+	padding-bottom: 48px;
+	margin-bottom: 48px;
+}
+.inhabitu-related-post:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0; 
+}
