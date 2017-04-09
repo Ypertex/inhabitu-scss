@@ -88,6 +88,11 @@ hr {
 .content pre {
 	margin-bottom: 1em;
 }
+.content h6.message-header {
+	font-family: $family-sans-serif;
+	font-weight: bold;
+	margin-bottom: 0;
+}
 .inhabitu-logo {
 	margin-bottom: -20px;
 	margin-top: -20px;
