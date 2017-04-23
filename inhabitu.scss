@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
 	border-bottom: 1px solid $grey-lighter;
+	margin: 48px 0;
 }
 
 // Limit title/logo in height
@@ -87,6 +88,9 @@ hr {
 }
 .content pre {
 	margin-bottom: 1em;
+}
+.content small {
+	color: $grey;
 }
 .content h6.message-header {
 	font-family: $family-sans-serif;
