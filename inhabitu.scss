@@ -83,6 +83,10 @@ hr {
 		content: "—";
 	}
 }
+.content abbr {
+	border-bottom: 1px dotted $text;
+	text-decoration: none;
+}
 .content pre {
 	margin-bottom: 1em;
 }
