@@ -69,6 +69,17 @@ hr {
 }
 
 // Inhabitu-specific styles
+.title {
+	font-weight: normal;
+}
+a.tag:hover {
+	color: $link-hover;
+	text-decoration: none;
+}
+a.tag.is-primary:hover {
+	color: $primary-invert;
+	background-color: $link-hover;
+}
 .content blockquote {
 	font-size: $size-medium;
 	border-left: 0.25em solid $primary;
