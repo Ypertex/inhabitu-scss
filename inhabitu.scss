@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-body {
 	background-color: $white-ter;
 	color: $grey;
-	.container .title {
+	.container .title, .container .subtitle {
 		color: $grey;
 	}
 }
