@@ -121,6 +121,9 @@ a.tag.is-primary:hover {
 .inhabitu-emphasize.section {
 	@extend .hero-body;
 }
+img.inhabitu-author {
+	border-radius: 100%;
+}
 .inhabitu-figure {
 	@extend .inhabitu-overflow;
 	text-align: center;
