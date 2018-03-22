@@ -24,8 +24,8 @@ $pre: $blue;
 @import "inhabitu-icons";
 @import "bulma/bulma";
 
-// Set font family for headers
-h1, h2, h3, h4, h5, h6 {
+// Set font family for title and headers
+.title, h1, h2, h3, h4, h5, h6 {
 	font-family: $family-serif;
 }
 
@@ -150,16 +150,6 @@ img.inhabitu-author {
 		@extend .heading;
 		padding: 1em 24px 0 24px;
 	}
-}
-.inhabitu-related-post {
-	border-bottom: 1px solid $grey-lighter;
-	padding-bottom: 48px;
-	margin-bottom: 48px;
-}
-.inhabitu-related-post:last-child {
-	border-bottom: 0;
-	padding-bottom: 0;
-	margin-bottom: 0; 
 }
 
 // Styles for embedded content
