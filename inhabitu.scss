@@ -32,7 +32,15 @@ $pre: $blue;
 	font-weight: normal;
 }
 
-// Set widths
+// Set heights and widths
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1;
+}
 .container {
 	max-width: 708px; // 768px minus padding and margin
 	margin: auto;
@@ -47,6 +55,12 @@ $pre: $blue;
 }
 .level-item:last-child, .is-mobile .level-item:last-child {
 	margin-right: 0;
+}
+hr {
+	@extend .inhabitu-overflow-top-bottom;
+}
+.card-content {
+	padding: 1rem;
 }
 
 // Set colors
@@ -64,9 +78,17 @@ $pre: $blue;
 		color: $footer-link-hover;
 	}
 }
+.card {
+	a {
+		color: $text;
+	}
+	.is-size-7, a:hover {
+		color: $grey;
+	}
+}
 hr {
-	@extend .inhabitu-overflow;
-	border-bottom: 1px solid $white-ter;
+	background: none;
+	border-bottom: 1px solid $grey-lighter;
 }
 .footer hr {
 	border-color: $grey-darker;
@@ -79,7 +101,21 @@ hr {
 
 // Inhabitu-specific styles
 .inhabitu-overflow {
-	margin: 3em -24px;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+.inhabitu-overflow-top-bottom {
+	@extend .inhabitu-overflow;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.inhabitu-overflow-top {
+	@extend .inhabitu-overflow;
+	margin-top: 3em;
+}
+.inhabitu-overflow-bottom {
+	@extend .inhabitu-overflow;
+	margin-bottom: 3em;
 }
 a.tag:hover {
 	color: $link-hover;
@@ -120,6 +156,9 @@ a.tag.is-primary:hover {
 	font-family: $family-sans-serif;
 	font-weight: bold;
 	margin-bottom: 0;
+}
+.inhabitu-navbar-logo {
+	margin-right: 0.5rem;
 }
 .inhabitu-logo {
 	margin-bottom: -20px;
