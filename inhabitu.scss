@@ -24,9 +24,12 @@ $pre: $blue;
 @import "inhabitu-icons";
 @import "bulma/bulma";
 
-// Set font family for title and headers
+// Set fonts
 .title, h1, h2, h3, h4, h5, h6 {
 	font-family: $family-serif;
+}
+.title {
+	font-weight: normal;
 }
 
 // Set widths
@@ -35,12 +38,15 @@ $pre: $blue;
 	margin: auto;
 }
 
-// Set margins
-.inhabitu-overflow {
-	margin: 48px -24px !important;
+// Set margins and paddings
+.footer {
+	padding-bottom: 3em;
 }
 .content blockquote {
 	@extend .inhabitu-overflow;
+}
+.level-item:last-child, .is-mobile .level-item:last-child {
+	margin-right: 0;
 }
 
 // Set colors
@@ -58,10 +64,12 @@ $pre: $blue;
 		color: $footer-link-hover;
 	}
 }
-
 hr {
-	border-bottom: 1px solid $grey-lighter;
-	margin: 48px 0;
+	@extend .inhabitu-overflow;
+	border-bottom: 1px solid $white-ter;
+}
+.footer hr {
+	border-color: $grey-darker;
 }
 
 // Limit title/logo in height
@@ -70,8 +78,8 @@ hr {
 }
 
 // Inhabitu-specific styles
-.title {
-	font-weight: normal;
+.inhabitu-overflow {
+	margin: 3em -24px;
 }
 a.tag:hover {
 	color: $link-hover;

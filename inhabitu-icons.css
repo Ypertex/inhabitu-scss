@@ -12,6 +12,19 @@
 
 }
 
+[data-icon]:before {
+  font-family: "inhabitu" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 [class^="inhabitu-"]:before,
 [class*=" inhabitu-"]:before {
   font-family: "inhabitu" !important;
@@ -26,38 +39,44 @@
 }
 
 .inhabitu-twitter:before {
-  content: "\61";
+  content: "\67";
+}
+.inhabitu-tag:before {
+  content: "\6a";
+}
+.inhabitu-tags:before {
+  content: "\6b";
 }
 .inhabitu-pin:before {
-  content: "\63";
+  content: "\68";
+}
+.inhabitu-quill-pen:before {
+  content: "\69";
+}
+.inhabitu-facebook:before {
+  content: "\6d";
+}
+.inhabitu-github:before {
+  content: "\6f";
+}
+.inhabitu-twitter-1:before {
+  content: "\73";
+}
+.inhabitu-creative-commons:before {
+  content: "\61";
 }
 .inhabitu-rss:before {
   content: "\64";
 }
-.inhabitu-link:before {
+.inhabitu-linkedin:before {
   content: "\65";
 }
-.inhabitu-tag:before {
-  content: "\66";
-}
-.inhabitu-facebook:before {
-  content: "\62";
-}
-.inhabitu-quill-pen:before {
-  content: "\67";
-}
-.inhabitu-info:before {
-  content: "\68";
-}
 .inhabitu-google:before {
-  content: "\69";
+  content: "\6c";
 }
 .inhabitu-chevron-left:before {
-  content: "\6a";
+  content: "\62";
 }
 .inhabitu-chevron-right:before {
-  content: "\6b";
-}
-.inhabitu-linkedin:before {
-  content: "\6c";
+  content: "\63";
 }
