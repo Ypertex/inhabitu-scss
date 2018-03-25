@@ -80,3 +80,6 @@
 .inhabitu-chevron-right:before {
   content: "\63";
 }
+.inhabitu-info:before {
+  content: "\66";
+}

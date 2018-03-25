@@ -94,11 +94,6 @@ hr {
 	border-color: $grey-darker;
 }
 
-// Limit title/logo in height
-.title.is-1 {
-	max-height: 80px;
-}
-
 // Inhabitu-specific styles
 .inhabitu-overflow {
 	margin-left: -1rem;
@@ -106,16 +101,16 @@ hr {
 }
 .inhabitu-overflow-top-bottom {
 	@extend .inhabitu-overflow;
-	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-top: 3em !important;
+	margin-bottom: 3em !important;
 }
 .inhabitu-overflow-top {
 	@extend .inhabitu-overflow;
-	margin-top: 3em;
+	margin-top: 3em !important;
 }
 .inhabitu-overflow-bottom {
 	@extend .inhabitu-overflow;
-	margin-bottom: 3em;
+	margin-bottom: 3em !important;
 }
 a.tag:hover {
 	color: $link-hover;
@@ -126,6 +121,7 @@ a.tag.is-primary:hover {
 	background-color: $link-hover;
 }
 .content blockquote {
+	@extend .inhabitu-overflow-top-bottom;
 	font-size: $size-medium;
 	border-left: 0.25em solid $primary;
 	footer {
@@ -144,6 +140,8 @@ a.tag.is-primary:hover {
 	text-decoration: none;
 }
 .content pre {
+	@extend .inhabitu-overflow;
+	padding: 1em;
 	margin-bottom: 1em;
 }
 .content small {
@@ -151,6 +149,9 @@ a.tag.is-primary:hover {
 }
 .content mark {
 	background-color: #ffe3bf;
+}
+.content .message {
+	@extend .inhabitu-overflow;
 }
 .content h6.message-header {
 	font-family: $family-sans-serif;
@@ -171,27 +172,17 @@ a.tag.is-primary:hover {
 img.inhabitu-author {
 	border-radius: 100%;
 }
-.inhabitu-figure {
-	@extend .inhabitu-overflow;
+.content figure {
+	@extend .inhabitu-overflow-top-bottom;
 	text-align: center;
 	img {
 		display: block;
 		margin: auto;
-		width: 100%;
 	}
-	.inhabitu-video {
-		display: block;
-		height: 0;
-		padding-bottom: 56.25%;
-		position: relative;
-		width: 100%;
-		iframe {
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+	figcaption {
+		@extend .heading;
+		font-style: normal;
+		margin-top: 1rem;
 	}
 	.inhabitu-footer {
 		@extend .heading;
