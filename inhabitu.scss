@@ -130,9 +130,9 @@ a.tag.is-primary:hover {
 		cite {
 			font-style: normal;
 		}
-	}
-	footer::before {
-		content: "—";
+		cite::before {
+			content: "—";
+		}
 	}
 }
 .content abbr {
