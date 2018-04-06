@@ -182,7 +182,9 @@ img.inhabitu-author {
 	figcaption {
 		@extend .heading;
 		font-style: normal;
-		margin-top: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 1rem;
 	}
 	.inhabitu-footer {
 		@extend .heading;
