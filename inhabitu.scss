@@ -31,8 +31,9 @@ $pre: $blue;
 	}
 .content {
 	h1, h2, h3, h4, h5, h6 {
-		@extend .title;
-	}
+		font-family: $family-serif;
+		font-weight: normal;
+		}
 }
 
 // Set heights and widths
@@ -193,9 +194,4 @@ img.inhabitu-author {
 		@extend .heading;
 		padding: 1em 24px 0 24px;
 	}
-}
-
-// Styles for embedded content
-twitterwidget {
-	margin: 48px auto !important;
 }
