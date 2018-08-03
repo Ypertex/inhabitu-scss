@@ -25,10 +25,13 @@ $pre: $blue;
 @import "bulma/bulma";
 
 // Set fonts
-.content {
-	.title, h1, h2, h3, h4, h5, h6 {
+.title {
 	font-family: $family-serif;
 	font-weight: normal;
+	}
+.content {
+	h1, h2, h3, h4, h5, h6 {
+		@extend .title;
 	}
 }
 
