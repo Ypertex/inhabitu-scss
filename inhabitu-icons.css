@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "inhabitu";
-  src:url("inhabitu.eot");
-  src:url("inhabitu.eot?#iefix") format("embedded-opentype"),
-    url("inhabitu.woff") format("woff"),
-    url("inhabitu.ttf") format("truetype"),
-    url("inhabitu.svg#inhabitu") format("svg");
+  src:url("/inhabitu.eot");
+  src:url("/inhabitu.eot?#iefix") format("embedded-opentype"),
+    url("/inhabitu.woff") format("woff"),
+    url("/inhabitu.ttf") format("truetype"),
+    url("/inhabitu.svg#inhabitu") format("svg");
   font-weight: normal;
   font-style: normal;
 

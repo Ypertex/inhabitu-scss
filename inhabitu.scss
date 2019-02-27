@@ -92,6 +92,15 @@ hr {
 		color: $grey;
 	}
 }
+h6.message-header {
+    @extend .message-header
+}
+.content small {
+	color: $grey;
+}
+.content mark {
+	background-color: #ffe3bf;
+}
 hr {
 	background: none;
 	border-bottom: 1px solid $grey-lighter;
@@ -149,12 +158,6 @@ a.tag.is-primary:hover {
 	@extend .inhabitu-overflow;
 	padding: 1em;
 	margin-bottom: 1em;
-}
-.content small {
-	color: $grey;
-}
-.content mark {
-	background-color: #ffe3bf;
 }
 .content .message {
 	@extend .inhabitu-overflow;
