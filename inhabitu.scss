@@ -111,6 +111,9 @@ hr {
 	background: none;
 	border-bottom: 1px solid $grey-lighter;
 }
+.pagination-previous:focus, .pagination-next:focus {
+    border-color: $primary;
+}
 .footer hr {
 	border-color: $grey-darker;
 }
