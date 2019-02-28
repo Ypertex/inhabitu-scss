@@ -62,7 +62,7 @@ main {
 .level-item:last-child, .is-mobile .level-item:last-child {
 	margin-right: 0;
 }
-hr, .content .card {
+hr {
 	@extend .inhabitu-overflow-top-bottom;
 }
 .card-header-title {
