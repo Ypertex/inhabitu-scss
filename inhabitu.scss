@@ -62,8 +62,11 @@ main {
 .level-item:last-child, .is-mobile .level-item:last-child {
 	margin-right: 0;
 }
-hr {
+hr, .content .card {
 	@extend .inhabitu-overflow-top-bottom;
+}
+.card-header-title {
+    padding-bottom: 0;
 }
 .card-content {
 	padding: 1rem;
@@ -85,6 +88,9 @@ hr {
 	}
 }
 .card {
+    .card-header-title {
+        color: $blue;
+    }
 	a {
 		color: $text;
 	}
