@@ -32,7 +32,7 @@ $pre: $blue;
 	font-weight: normal;
 	}
 .content {
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4 {
 		font-family: $family-serif;
 		font-weight: normal;
 		}
@@ -97,6 +97,9 @@ hr {
 	.is-size-7, a:hover {
 		color: $grey;
 	}
+}
+.navbar-burger {
+    color: $white;
 }
 h6.message-header {
     @extend .message-header
