@@ -88,8 +88,12 @@ hr {
 	}
 }
 .card {
+	.card-header {
+		box-shadow: none;
+		border-bottom: 1px solid $grey-lightest;
+	}
     .card-header-title {
-        color: $blue;
+		color: $grey;
     }
 	a {
 		color: $text;
@@ -119,6 +123,9 @@ hr {
 }
 .footer hr {
 	border-color: $grey-darker;
+}
+figure img {
+	@extend .card;
 }
 
 // Inhabitu-specific styles
