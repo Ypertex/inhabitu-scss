@@ -124,7 +124,7 @@ hr {
 .footer hr {
 	border-color: $grey-darker;
 }
-figure img {
+figure img, figure div {
 	@extend .card;
 }
 
@@ -132,6 +132,9 @@ figure img {
 .inhabitu-overflow {
 	margin-left: -1rem;
 	margin-right: -1rem;
+}
+.content .message:last-child {
+	margin-bottom: 0 !important;
 }
 .inhabitu-overflow-top-bottom {
 	@extend .inhabitu-overflow;
